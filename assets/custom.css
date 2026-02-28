@@ -64,16 +64,27 @@ form[action="/cart/add"] button[type="submit"] {
   border-color: var(--mtns-navy-dark) !important;
 }
 
-/* --- Announcement bar --- */
-.announcement-bar,
-.header-announcements {
+/* --- Announcement bar ---
+   Fabric renders: .section-background (sibling BEFORE aside) + aside.announcement-bar
+   The .section-background carries the scheme color. Target both.   */
+
+/* Target section-background in any section containing an announcement bar */
+[id*="__announcements"] .section-background {
   background-color: var(--mtns-red) !important;
-  color: var(--mtns-white) !important;
 }
 
-.announcement-bar a,
-.header-announcements a {
-  color: var(--mtns-white) !important;
+aside.announcement-bar {
+  background-color: var(--mtns-red) !important;
+  position: relative;
+  z-index: 1;
+}
+
+aside.announcement-bar a,
+aside.announcement-bar p,
+aside.announcement-bar span,
+aside.announcement-bar button,
+aside.announcement-bar * {
+  color: #ffffff !important;
 }
 
 /* --- Header / nav --- */
@@ -136,19 +147,6 @@ textarea {
   border-radius: 4px;
 }
 
-/* --- Section padding rhythm --- */
-@media screen and (min-width: 990px) {
-  .section {
-    padding-block: 80px;
-  }
-}
-
-@media screen and (max-width: 989px) {
-  .section {
-    padding-block: 48px;
-  }
-}
-
 /* --- Footer dark background --- */
 .footer-section,
 .site-footer,
@@ -166,4 +164,34 @@ footer.footer a {
 .footer-section a:hover,
 footer.footer a:hover {
   color: var(--mtns-white);
+}
+
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+/* Force hero to fill the viewport regardless of image aspect ratio.
+   Without this, a wide/landscape image (e.g. 3:1) renders the hero
+   at only ~400px. This ensures a full cinematic experience.          */
+.hero__media-grid {
+  min-height: 72svh;
+}
+
+/* Fabric's hero__content-wrapper spans all 3 grid columns (full bleed)
+   so text has zero left/right padding by default. Add proper gutters.  */
+.hero__content-wrapper {
+  padding-inline: 24px;
+}
+
+@media screen and (min-width: 750px) {
+  .hero__content-wrapper {
+    padding-inline: 48px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .hero__content-wrapper {
+    padding-inline: 80px;
+  }
 }
