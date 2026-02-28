@@ -338,91 +338,94 @@
     "mountain_images_columns": {
       "type": "media-with-content",
       "blocks": {
-        "col1_heading": {
-          "type": "text",
-          "name": "Column 1 heading",
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
           "settings": {
-            "text": "<h3>{{ product.metafields.object.product_type.value.excerpt.value }}</h3>",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h3",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 12,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "media_type": "image"
           },
           "blocks": {}
         },
-        "col1_body": {
-          "type": "text",
-          "name": "Column 1 body",
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
           "settings": {
-            "text": "{{ product.metafields.object.product_type.value.description | metafield_tag }}",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "body-normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0
           },
-          "blocks": {}
+          "blocks": {
+            "col1_heading": {
+              "type": "text",
+              "name": "Column 1 heading",
+              "settings": {
+                "text": "<h3>{{ product.metafields.object.product_type.value.excerpt.value }}</h3>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 12,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "col1_body": {
+              "type": "text",
+              "name": "Column 1 body",
+              "settings": {
+                "text": "{{ product.metafields.object.product_type.value.description | metafield_tag }}",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "body-normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "col1_heading",
+            "col1_body"
+          ]
         }
       },
       "block_order": [
-        "col1_heading",
-        "col1_body"
+        "media",
+        "content"
       ],
       "name": "Mountain images & descriptions",
       "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
         "media_width": "50",
         "extend_media": false,
         "media_position": "left",
         "media_height": "60svh",
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "gap": 0,
-        "content_direction": "column",
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
         "section_width": "page-width",
         "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
         "padding-block-start": 64,
         "padding-block-end": 32
       }
@@ -581,13 +584,21 @@
                   "blocks": {}
                 }
               },
-              "block_order": ["product_title_rec", "price_rec"]
+              "block_order": [
+                "product_title_rec",
+                "price_rec"
+              ]
             }
           },
-          "block_order": ["product_card_gallery", "card_info_group"]
+          "block_order": [
+            "product_card_gallery",
+            "card_info_group"
+          ]
         }
       },
-      "block_order": ["rec_heading"],
+      "block_order": [
+        "rec_heading"
+      ],
       "name": "Product recommendations",
       "settings": {
         "product": "{{ closest.product }}",

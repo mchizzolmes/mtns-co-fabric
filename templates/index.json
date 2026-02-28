@@ -81,7 +81,7 @@
           "type": "text",
           "name": "Subheading",
           "settings": {
-            "text": "<p>Authentic ski resort apparel and artwork — licensed by the resorts you love.</p>",
+            "text": "<p>Authentic ski resort apparel and artwork \u2014 licensed by the resorts you love.</p>",
             "width": "fill",
             "max_width": "540px",
             "alignment": "left",
@@ -275,7 +275,9 @@
                   "blocks": {}
                 }
               },
-              "block_order": ["collection_title"]
+              "block_order": [
+                "collection_title"
+              ]
             }
           },
           "block_order": [
@@ -286,7 +288,11 @@
       },
       "name": "Shop by Category",
       "settings": {
-        "collection_list": ["adult-resort-hoodies", "home-goods", "accessories"],
+        "collection_list": [
+          "adult-resort-hoodies",
+          "home-goods",
+          "accessories"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 3,
@@ -511,7 +517,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["collection_title", "view_all_button"]
+          "block_order": [
+            "collection_title",
+            "view_all_button"
+          ]
         }
       },
       "name": "Featured Products",
@@ -537,134 +546,137 @@
     "brand_story": {
       "type": "media-with-content",
       "blocks": {
-        "eyebrow_story": {
-          "type": "text",
-          "name": "Eyebrow",
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
           "settings": {
-            "text": "<p>Born in Minturn, CO</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "0.8125rem",
-            "line_height": "normal",
-            "letter_spacing": "0.08em",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "color": "#1B3A5C",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 8,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "media_type": "image"
           },
           "blocks": {}
         },
-        "headline_story": {
-          "type": "text",
-          "name": "Headline",
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
           "settings": {
-            "text": "<h2>The Real Thing, From the Real Mountains</h2>",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 16,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0
           },
-          "blocks": {}
-        },
-        "body_story": {
-          "type": "text",
-          "name": "Body",
-          "settings": {
-            "text": "<p>Every product we sell is officially licensed by the resorts themselves. That means authentic logos, accurate trail maps, and quality that the mountains would actually approve of. No knockoffs. No generic gear. Just the real deal from someone who grew up skiing it.</p>",
-            "width": "fill",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "body-normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "#6B7280",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 24,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+          "blocks": {
+            "eyebrow_story": {
+              "type": "text",
+              "name": "Eyebrow",
+              "settings": {
+                "text": "<p>Born in Minturn, CO</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.8125rem",
+                "line_height": "normal",
+                "letter_spacing": "0.08em",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "color": "#1B3A5C",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "headline_story": {
+              "type": "text",
+              "name": "Headline",
+              "settings": {
+                "text": "<h2>The Real Thing, From the Real Mountains</h2>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 16,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "body_story": {
+              "type": "text",
+              "name": "Body",
+              "settings": {
+                "text": "<p>Every product we sell is officially licensed by the resorts themselves. That means authentic logos, accurate trail maps, and quality that the mountains would actually approve of. No knockoffs. No generic gear. Just the real deal from someone who grew up skiing it.</p>",
+                "width": "fill",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "body-normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "#6B7280",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 24,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "cta_story": {
+              "type": "button",
+              "name": "CTA",
+              "settings": {
+                "label": "Our Story",
+                "link": "shopify://pages/about",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
           },
-          "blocks": {}
-        },
-        "cta_story": {
-          "type": "button",
-          "name": "CTA",
-          "settings": {
-            "label": "Our Story",
-            "link": "shopify://pages/about",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
+          "block_order": [
+            "eyebrow_story",
+            "headline_story",
+            "body_story",
+            "cta_story"
+          ]
         }
       },
       "block_order": [
-        "eyebrow_story",
-        "headline_story",
-        "body_story",
-        "cta_story"
+        "media",
+        "content"
       ],
       "name": "Brand Story",
       "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
         "media_width": "50",
         "extend_media": true,
         "media_position": "left",
         "media_height": "60svh",
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "gap": 0,
-        "content_direction": "column",
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
         "section_width": "page-width",
         "color_scheme": "scheme-2",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -676,7 +688,7 @@
           "type": "text",
           "name": "Review 1",
           "settings": {
-            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Best hoodie I've ever bought. The Vail logo is crisp and the quality is unreal.\" — Jake M.</p>",
+            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Best hoodie I've ever bought. The Vail logo is crisp and the quality is unreal.\" \u2014 Jake M.</p>",
             "width": "fit-content",
             "max_width": "480px",
             "alignment": "left",
@@ -702,7 +714,7 @@
           "type": "text",
           "name": "Review 2",
           "settings": {
-            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Finally, officially licensed gear that doesn't look cheap. My Park City blanket is stunning.\" — Sarah T.</p>",
+            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Finally, officially licensed gear that doesn't look cheap. My Park City blanket is stunning.\" \u2014 Sarah T.</p>",
             "width": "fit-content",
             "max_width": "520px",
             "alignment": "left",
@@ -728,7 +740,7 @@
           "type": "text",
           "name": "Review 3",
           "settings": {
-            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Got the Breckenridge trail map print for my ski house. Everyone always asks where I got it.\" — Mike R.</p>",
+            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Got the Breckenridge trail map print for my ski house. Everyone always asks where I got it.\" \u2014 Mike R.</p>",
             "width": "fit-content",
             "max_width": "520px",
             "alignment": "left",
@@ -754,7 +766,7 @@
           "type": "text",
           "name": "Review 4",
           "settings": {
-            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Fast shipping, amazing packaging, and the beanie fits perfectly. Stowe merch forever.\" — Lena K.</p>",
+            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Fast shipping, amazing packaging, and the beanie fits perfectly. Stowe merch forever.\" \u2014 Lena K.</p>",
             "width": "fit-content",
             "max_width": "480px",
             "alignment": "left",
