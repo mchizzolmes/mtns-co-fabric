@@ -173,11 +173,20 @@ footer.footer a:hover {
 
 /* Fabric's hero__content-wrapper spans all 3 grid columns (full bleed)
    so text has zero left/right padding by default. Add proper gutters.
-   min-height: inherit ensures the flex container fills the hero height
-   so justify-content: flex-end actually pushes content to the bottom.  */
+
+   The wrapper also needs an explicit min-height so justify-content: flex-end
+   can push content to the bottom of the hero.
+   Problem: the theme's .section-content-wrapper.section-content-wrapper rule
+   (specificity 0,2,0) uses --section-min-height which is empty inside hero.
+   Fix: descendant selector .hero .hero__content-wrapper also has specificity
+   0,2,0, but loads after base.css so it wins. We mirror the theme's formula
+   using --hero-min-height (which IS set) minus the padding offset var.    */
 .hero__content-wrapper {
   padding-inline: 24px;
-  min-height: inherit;
+}
+
+.hero .hero__content-wrapper {
+  min-height: calc(var(--hero-min-height) - var(--section-height-offset, 0px));
 }
 
 @media screen and (min-width: 750px) {
