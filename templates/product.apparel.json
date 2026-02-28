@@ -282,11 +282,7 @@
                   "blocks": {}
                 }
               },
-              "block_order": [
-                "quantity",
-                "add-to-cart",
-                "accelerated-checkout"
-              ]
+              "block_order": []
             },
             "complementary_products": {
               "type": "text",
@@ -414,10 +410,7 @@
           ]
         }
       },
-      "block_order": [
-        "media",
-        "content"
-      ],
+      "block_order": [],
       "name": "Product type info",
       "settings": {
         "media_width": "50",

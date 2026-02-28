@@ -281,7 +281,6 @@
             }
           },
           "block_order": [
-            "collection-card-image",
             "group_title"
           ]
         }
@@ -665,10 +664,7 @@
           ]
         }
       },
-      "block_order": [
-        "media",
-        "content"
-      ],
+      "block_order": [],
       "name": "Brand Story",
       "settings": {
         "media_width": "50",
