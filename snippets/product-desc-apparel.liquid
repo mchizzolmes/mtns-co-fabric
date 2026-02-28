@@ -1,0 +1,15 @@
+{% liquid
+  assign product_specs = product.metafields.object.product_type.value
+  assign mountain_resort = product.metafields.object.mountain.value
+  assign resort_title = mountain_resort.mountain.value | prepend: 'the ' | append: ' logo'
+  assign bullets = product_specs.bullet_points.value
+%}
+<p style="margin-bottom:20px; line-height:1.3;">{{ product_specs.short_description.value }}</p>
+<ul style="font-size:16px; line-height:20px;">
+  {%- for bullet in bullets -%}
+    {%- assign bullet_segments = bullet | split: ':' -%}
+    {%- assign bullet_text = bullet_segments[1] | replace: 'your favorite resort logo', resort_title -%}
+    <li><strong>{{ bullet_segments[0] }}:</strong>{{ bullet_text }}</li>
+  {%- endfor -%}
+</ul>
+<style>ul { margin-bottom: 20px; } li { margin-bottom: 8px; }</style>

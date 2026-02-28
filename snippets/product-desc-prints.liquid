@@ -1,0 +1,8 @@
+{%- liquid
+  assign mtn_resort = product.metafields.object.mountain.value.mountain | append: ' Ski Resort'
+  assign raw_desc = product.metafields.object.product_type.value.form_desc | metafield_tag
+  assign replaced_desc = raw_desc | replace: 'Ski Resort', mtn_resort
+  assign final_desc = replaced_desc | replace: 'ski resort', mtn_resort
+-%}
+{{ final_desc }}
+<style>h5 { font-size: 18px; font-weight: 700; padding-bottom: 18px; } .metafield-rich_text_field li { padding-bottom: 16px; line-height: 20px; }</style>

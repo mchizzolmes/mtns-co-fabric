@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_main": {
       "type": "hero",
@@ -81,7 +82,7 @@
           "type": "text",
           "name": "Subheading",
           "settings": {
-            "text": "<p>Authentic ski resort apparel and artwork \u2014 licensed by the resorts you love.</p>",
+            "text": "<p>Authentic ski resort apparel and artwork — licensed by the resorts you love.</p>",
             "width": "fill",
             "max_width": "540px",
             "alignment": "left",
@@ -214,7 +215,6 @@
               "type": "group",
               "name": "Title group",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -238,11 +238,12 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 16,
                 "padding-block-end": 16,
                 "padding-inline-start": 16,
@@ -318,96 +319,84 @@
           "settings": {
             "resort_name": "Vail",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Vail"
-          },
-          "blocks": {}
+          }
         },
         "resort_beaver_creek": {
           "type": "resort",
           "settings": {
             "resort_name": "Beaver Creek",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Beaver Creek"
-          },
-          "blocks": {}
+          }
         },
         "resort_breckenridge": {
           "type": "resort",
           "settings": {
             "resort_name": "Breckenridge",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Breckenridge"
-          },
-          "blocks": {}
+          }
         },
         "resort_keystone": {
           "type": "resort",
           "settings": {
             "resort_name": "Keystone",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Keystone"
-          },
-          "blocks": {}
+          }
         },
         "resort_park_city": {
           "type": "resort",
           "settings": {
             "resort_name": "Park City",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Park City"
-          },
-          "blocks": {}
+          }
         },
         "resort_whistler": {
           "type": "resort",
           "settings": {
             "resort_name": "Whistler Blackcomb",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Whistler Blackcomb"
-          },
-          "blocks": {}
+          }
         },
         "resort_heavenly": {
           "type": "resort",
           "settings": {
             "resort_name": "Heavenly",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Heavenly"
-          },
-          "blocks": {}
+          }
         },
         "resort_stowe": {
           "type": "resort",
           "settings": {
             "resort_name": "Stowe",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Stowe"
-          },
-          "blocks": {}
+          }
         },
         "resort_crested_butte": {
           "type": "resort",
           "settings": {
             "resort_name": "Crested Butte",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Crested Butte"
-          },
-          "blocks": {}
+          }
         },
         "resort_crystal": {
           "type": "resort",
           "settings": {
             "resort_name": "Crystal Mountain",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Crystal Mountain"
-          },
-          "blocks": {}
+          }
         },
         "resort_schweitzer": {
           "type": "resort",
           "settings": {
             "resort_name": "Schweitzer",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Schweitzer"
-          },
-          "blocks": {}
+          }
         },
         "resort_snowshoe": {
           "type": "resort",
           "settings": {
             "resort_name": "Snowshoe",
             "resort_url": "/collections/all?filter.p.m.custom.mountain=Snowshoe"
-          },
-          "blocks": {}
+          }
         }
       },
       "block_order": [
@@ -478,7 +467,6 @@
               "type": "collection-title",
               "name": "Section heading",
               "settings": {
-                "text": "<h2>New to the Mountain</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -525,9 +513,9 @@
       "name": "Featured Products",
       "settings": {
         "collection": "all",
-        "max_products": 4,
         "layout_type": "grid",
         "carousel_on_mobile": true,
+        "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "80cqw",
@@ -664,14 +652,13 @@
           ]
         }
       },
-      "block_order": [],
       "name": "Brand Story",
       "settings": {
-        "media_width": "50",
-        "extend_media": true,
         "media_position": "left",
+        "media_width": "50",
         "media_height": "60svh",
         "section_width": "page-width",
+        "extend_media": true,
         "color_scheme": "scheme-2",
         "padding-block-start": 0,
         "padding-block-end": 0
@@ -684,7 +671,7 @@
           "type": "text",
           "name": "Review 1",
           "settings": {
-            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Best hoodie I've ever bought. The Vail logo is crisp and the quality is unreal.\" \u2014 Jake M.</p>",
+            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Best hoodie I've ever bought. The Vail logo is crisp and the quality is unreal.\" — Jake M.</p>",
             "width": "fit-content",
             "max_width": "480px",
             "alignment": "left",
@@ -710,7 +697,7 @@
           "type": "text",
           "name": "Review 2",
           "settings": {
-            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Finally, officially licensed gear that doesn't look cheap. My Park City blanket is stunning.\" \u2014 Sarah T.</p>",
+            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Finally, officially licensed gear that doesn't look cheap. My Park City blanket is stunning.\" — Sarah T.</p>",
             "width": "fit-content",
             "max_width": "520px",
             "alignment": "left",
@@ -736,7 +723,7 @@
           "type": "text",
           "name": "Review 3",
           "settings": {
-            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Got the Breckenridge trail map print for my ski house. Everyone always asks where I got it.\" \u2014 Mike R.</p>",
+            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Got the Breckenridge trail map print for my ski house. Everyone always asks where I got it.\" — Mike R.</p>",
             "width": "fit-content",
             "max_width": "520px",
             "alignment": "left",
@@ -762,7 +749,7 @@
           "type": "text",
           "name": "Review 4",
           "settings": {
-            "text": "<p>\u2b50\u2b50\u2b50\u2b50\u2b50 &nbsp; \"Fast shipping, amazing packaging, and the beanie fits perfectly. Stowe merch forever.\" \u2014 Lena K.</p>",
+            "text": "<p>⭐⭐⭐⭐⭐ &nbsp; \"Fast shipping, amazing packaging, and the beanie fits perfectly. Stowe merch forever.\" — Lena K.</p>",
             "width": "fit-content",
             "max_width": "480px",
             "alignment": "left",
@@ -794,9 +781,6 @@
       "name": "Customer Reviews",
       "settings": {
         "movement_direction": "left",
-        "pause_on_hover": true,
-        "gap": 0,
-        "section_width": "full-width",
         "color_scheme": "scheme-2",
         "padding-block-start": 32,
         "padding-block-end": 32

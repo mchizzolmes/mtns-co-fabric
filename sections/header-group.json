@@ -18,8 +18,7 @@
           "type": "_announcement",
           "settings": {
             "text": "FREE SHIPPING ON ORDERS $75+",
-            "link": "",
-            "open_in_new_tab": false
+            "link": ""
           },
           "blocks": {}
         },
@@ -27,8 +26,7 @@
           "type": "_announcement",
           "settings": {
             "text": "Officially Licensed by Vail Resorts & Alterra Mountain Co.",
-            "link": "/pages/about",
-            "open_in_new_tab": false
+            "link": "/pages/about"
           },
           "blocks": {}
         }
@@ -38,8 +36,6 @@
         "announcement_2"
       ],
       "settings": {
-        "auto_rotate": true,
-        "change_delay": 5,
         "section_width": "full-width",
         "color_scheme": "scheme-1",
         "padding-block-start": 10,
