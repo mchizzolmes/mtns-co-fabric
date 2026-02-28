@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "product-information": {
       "type": "product-information",
@@ -70,7 +71,6 @@
               "type": "group",
               "name": "Title & Price",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -94,11 +94,12 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -135,7 +136,6 @@
                   "type": "group",
                   "name": "Price & Rating",
                   "settings": {
-                    "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": false,
                     "horizontal_alignment": "flex-start",
@@ -159,11 +159,12 @@
                     "border_width": 1,
                     "border_opacity": 100,
                     "border_radius": 0,
-                    "placeholder": "",
                     "toggle_overlay": false,
                     "overlay_color": "#00000026",
                     "overlay_style": "solid",
                     "gradient_direction": "to top",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -192,14 +193,10 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {}
-                    },
-                    "loox_rating": {
-                      "type": "@app"
                     }
                   },
                   "block_order": [
-                    "product_price",
-                    "loox_rating"
+                    "product_price"
                   ]
                 }
               },
@@ -212,7 +209,7 @@
               "type": "text",
               "name": "Short description (prints)",
               "settings": {
-                "text": "{% assign mtn_resort = product.metafields.object.mountain.value.mountain | append: ' Ski Resort' %}{% assign short_desc = product.metafields.object.product_type.value.form_desc | metafield_tag | replace: 'Ski Resort', mtn_resort | replace:'ski resort', mtn_resort %}{{ short_desc }}<style>h5 { font-size: 18px; font-weight: 700; padding-bottom: 18px; } .metafield-rich_text_field li { padding-bottom: 16px; line-height: 20px; }</style>",
+                "text": "{{ product.metafields.object.product_type.value.form_desc | metafield_tag }}",
                 "width": "fill",
                 "max_width": "normal",
                 "alignment": "left",
@@ -410,14 +407,13 @@
           ]
         }
       },
-      "block_order": [],
       "name": "Mountain images & descriptions",
       "settings": {
-        "media_width": "50",
-        "extend_media": false,
         "media_position": "left",
+        "media_width": "50",
         "media_height": "60svh",
         "section_width": "page-width",
+        "extend_media": false,
         "color_scheme": "scheme-1",
         "padding-block-start": 64,
         "padding-block-end": 32
@@ -425,7 +421,6 @@
     },
     "mountain_stats_prints": {
       "type": "mountain-stats",
-      "blocks": {},
       "name": "Mountain Stats",
       "settings": {}
     },
@@ -495,7 +490,6 @@
             "card_info_group": {
               "type": "_product-card-group",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -523,6 +517,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "open_in_new_tab": false,
                 "padding-block-start": 8,
                 "padding-block-end": 8,
                 "padding-inline-start": 0,
