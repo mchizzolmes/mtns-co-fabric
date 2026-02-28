@@ -11,6 +11,41 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "announcements": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_1": {
+          "type": "_announcement",
+          "settings": {
+            "text": "FREE SHIPPING ON ORDERS $75+",
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "announcement_2": {
+          "type": "_announcement",
+          "settings": {
+            "text": "Officially Licensed by Vail Resorts & Alterra Mountain Co.",
+            "link": "/pages/about",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_1",
+        "announcement_2"
+      ],
+      "settings": {
+        "auto_rotate": true,
+        "change_delay": 5,
+        "section_width": "full-width",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 10,
+        "padding-block-end": 10
+      }
+    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -18,7 +53,7 @@
           "type": "_header-logo",
           "static": true,
           "settings": {
-            "hide_logo_on_home_page": true,
+            "hide_logo_on_home_page": false,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -35,7 +70,7 @@
             "type_font_primary_size": "0.875rem",
             "menu_font_style": "inverse_large",
             "type_font_primary_link": "primary",
-            "type_case_primary_link": "none",
+            "type_case_primary_link": "uppercase",
             "menu_style": "featured_collections",
             "featured_products_aspect_ratio": "4 / 5",
             "featured_collections_aspect_ratio": "1 / 1",
@@ -50,15 +85,15 @@
         }
       },
       "settings": {
-        "logo_position": "center",
+        "logo_position": "left",
         "menu_position": "left",
         "menu_row": "top",
         "show_search": true,
         "search_position": "right",
         "search_row": "top",
-        "show_country": true,
-        "country_selector_style": true,
-        "show_language": true,
+        "show_country": false,
+        "country_selector_style": false,
+        "show_language": false,
         "localization_font": "heading",
         "localization_font_size": "0.875rem",
         "localization_position": "right",
@@ -69,12 +104,12 @@
         "divider_width": 0,
         "divider_size": "page-width",
         "border_width": 0,
-        "color_scheme_top": "scheme-1",
+        "color_scheme_top": "scheme-3",
         "color_scheme_bottom": "",
         "color_scheme_transparent": "scheme-6",
         "enable_transparent_header_home": true,
         "home_color_scheme": "inverse",
-        "enable_transparent_header_product": true,
+        "enable_transparent_header_product": false,
         "product_color_scheme": "default",
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default"
@@ -82,6 +117,7 @@
     }
   },
   "order": [
+    "announcements",
     "header_section"
   ]
 }

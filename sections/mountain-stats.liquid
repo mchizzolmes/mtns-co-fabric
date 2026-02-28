@@ -1,0 +1,182 @@
+{% assign mtn = product.metafields.object.mountain.value %}
+{% if mtn %}
+<section class="mountain-stats-section" id="mountain-stats-{{ section.id }}">
+
+  <div class="mountain-stats__header">
+    <h2 class="mountain-stats__title">{{ mtn.mountain.value }} Mountain Stats</h2>
+    {% if mtn.opening_date.value %}
+      <div class="mountain-stats__opening">
+        <strong>{{ mtn.opening_date.value | date: "%Y" }} Opening Date:</strong>
+        {{ mtn.opening_date.value | date: "%B %d, %Y" }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="mountain-stats__grid">
+    {% if mtn.snowfall.value %}
+    <div class="mountain-stat">
+      <span class="mountain-stat__label">Annual Snowfall</span>
+      <span class="mountain-stat__value">{{ mtn.snowfall.value }}</span>
+    </div>
+    {% endif %}
+    {% if mtn.size.value %}
+    <div class="mountain-stat">
+      <span class="mountain-stat__label">Skiable Terrain</span>
+      <span class="mountain-stat__value">{{ mtn.size.value }}</span>
+    </div>
+    {% endif %}
+    {% if mtn.lifts.value %}
+    <div class="mountain-stat">
+      <span class="mountain-stat__label">Total Lifts</span>
+      <span class="mountain-stat__value">{{ mtn.lifts.value }}</span>
+    </div>
+    {% endif %}
+    {% if mtn.peak.value %}
+    <div class="mountain-stat">
+      <span class="mountain-stat__label">Peak Elevation</span>
+      <span class="mountain-stat__value">{{ mtn.peak.value }}</span>
+    </div>
+    {% endif %}
+    {% if mtn.base.value %}
+    <div class="mountain-stat">
+      <span class="mountain-stat__label">Base Elevation</span>
+      <span class="mountain-stat__value">{{ mtn.base.value }}</span>
+    </div>
+    {% endif %}
+    {% if mtn.year_one.value %}
+    <div class="mountain-stat">
+      <span class="mountain-stat__label">Inaugural Year</span>
+      <span class="mountain-stat__value">{{ mtn.year_one.value }}</span>
+    </div>
+    {% endif %}
+  </div>
+
+  {% if mtn.body_text %}
+  <div class="mountain-stats__about">
+    <h3>About {{ mtn.mountain.value }} Ski Resort</h3>
+    {{ mtn.body_text | metafield_tag }}
+  </div>
+  {% endif %}
+
+</section>
+{% endif %}
+
+{% stylesheet %}
+  .mountain-stats-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .mountain-stats__header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .mountain-stats__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C1C1E;
+    margin-bottom: 16px;
+  }
+
+  .mountain-stats__opening {
+    display: inline-block;
+    border: 2px solid #1B3A5C;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #1C1C1E;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .mountain-stats__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    background: #1B3A5C;
+    border-radius: 16px;
+    padding: 40px 32px;
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 768px) {
+    .mountain-stats__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding: 28px 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .mountain-stats__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .mountain-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .mountain-stat__label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #D4E9F7;
+  }
+
+  .mountain-stat__value {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.2;
+  }
+
+  .mountain-stats__about {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .mountain-stats__about h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1C1C1E;
+    margin-bottom: 16px;
+  }
+
+  .mountain-stats__about p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #6B7280;
+  }
+
+  @media (max-width: 768px) {
+    .mountain-stats__title {
+      font-size: 24px;
+    }
+    .mountain-stats-section {
+      margin: 40px auto;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Mountain Stats",
+  "tag": "div",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Mountain Stats"
+    }
+  ]
+}
+{% endschema %}

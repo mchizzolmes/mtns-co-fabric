@@ -11,9 +11,61 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
-    "section_9FjKrC": {
+    "email_signup_section": {
       "type": "section",
       "blocks": {
+        "heading_block": {
+          "type": "text",
+          "name": "Heading",
+          "settings": {
+            "text": "<h2>First Tracks on New Drops</h2>",
+            "width": "fill",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "subtext_block": {
+          "type": "text",
+          "name": "Subtext",
+          "settings": {
+            "text": "<p>New products, resort drops, and insider deals. No spam — just mountain stuff.</p>",
+            "width": "fill",
+            "max_width": "600px",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "email_signup_TCQELN": {
           "type": "email-signup",
           "name": "t:names.email_signup",
@@ -24,16 +76,16 @@
             "heading": "",
             "heading_preset": "h3",
             "color_scheme": "",
-            "border_style": "underline",
+            "border_style": "box",
             "border_width": 1,
-            "border_radius": 0,
-            "input_type_preset": "h2",
-            "style_class": "button-unstyled",
-            "display_type": "arrow",
-            "label": "Sign Up",
-            "integrated_button": false,
+            "border_radius": 4,
+            "input_type_preset": "paragraph",
+            "style_class": "button",
+            "display_type": "inline",
+            "label": "Subscribe",
+            "integrated_button": true,
             "button_type_preset": "paragraph",
-            "padding-block-start": 24,
+            "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -42,22 +94,24 @@
         }
       },
       "block_order": [
+        "heading_block",
+        "subtext_block",
         "email_signup_TCQELN"
       ],
-      "name": "t:names.email_signup",
+      "name": "Email Signup",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
+        "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
+        "gap": 0,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -69,8 +123,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 64,
+        "padding-block-end": 64
       }
     },
     "footer": {
@@ -169,8 +223,8 @@
       ],
       "settings": {
         "section_width": "page-width",
-        "gap": 0,
-        "color_scheme": "",
+        "gap": 32,
+        "color_scheme": "scheme-3",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
@@ -225,15 +279,15 @@
       "settings": {
         "section_width": "page-width",
         "gap": 24,
-        "divider_thickness": 0,
-        "color_scheme": "",
-        "padding-block-start": 0,
+        "divider_thickness": 1,
+        "color_scheme": "scheme-3",
+        "padding-block-start": 24,
         "padding-block-end": 40
       }
     }
   },
   "order": [
-    "section_9FjKrC",
+    "email_signup_section",
     "footer",
     "utilities"
   ]
